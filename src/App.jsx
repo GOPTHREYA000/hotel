@@ -7,6 +7,8 @@ const fadeUp = {
   visible: { opacity: 1, y: 0, transition: { duration: 0.6 } }
 };
 
+const baseUrl = import.meta.env.BASE_URL;
+
 export default function App() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -50,10 +52,10 @@ export default function App() {
   };
 
   const images = [
-    '/images/buffet_spread_1775080310805.png',
-    '/images/breakfast_spread_1775080326940.png',
-    '/images/restaurant_interior_1775080342849.png',
-    '/images/hero_dining_1775080294808.png'
+    `${baseUrl}images/buffet_spread_1775080310805.png`,
+    `${baseUrl}images/breakfast_spread_1775080326940.png`,
+    `${baseUrl}images/restaurant_interior_1775080342849.png`,
+    `${baseUrl}images/hero_dining_1775080294808.png`
   ];
 
   return (
@@ -100,7 +102,7 @@ export default function App() {
       {/* HERO SECTION */}
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 w-full h-full">
-          <img src="/images/hero_dining_1775080294808.png" alt="Mosaic Restaurant Dining" className="w-full h-full object-cover" />
+          <img src={`${baseUrl}images/hero_dining_1775080294808.png`} alt="Mosaic Restaurant Dining" className="w-full h-full object-cover" />
           <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/80"></div>
         </div>
 
