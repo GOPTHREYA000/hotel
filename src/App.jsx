@@ -63,11 +63,8 @@ export default function App() {
       {/* HEADER */}
       <header className={`fixed w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-white shadow-md py-3' : 'bg-transparent py-5'}`}>
         <div className="container mx-auto px-6 lg:px-12 flex justify-between items-center">
-          <div className="text-2xl font-heading font-bold tracking-wider text-[#C8A96A]">
-            MOSAIC
-            <span className="block text-[10px] tracking-widest text-[#111111] uppercase mt-1">
-              Global Cuisine Restaurant
-            </span>
+          <div className="text-lg md:text-2xl font-heading font-bold tracking-wider text-[#C8A96A]">
+            Mosaic – Global Cuisine Restaurant
           </div>
 
           <div className="hidden md:flex items-center space-x-8 text-sm font-medium">
