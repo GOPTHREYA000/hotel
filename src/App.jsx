@@ -137,15 +137,19 @@ export default function App() {
       </section>
 
       {/* IMAGE SCROLL SECTION */}
-      <section className="py-20 bg-[#111111]">
-        <div className="flex overflow-x-auto snap-x snap-mandatory hide-scrollbar gap-6 px-6 lg:px-12 pb-8">
-          {images.map((img, idx) => (
-            <div key={idx} className="flex-none w-[85vw] md:w-[60vw] lg:w-[40vw] h-[400px] snap-center overflow-hidden rounded-sm relative group cursor-pointer">
+      <section className="py-20 bg-[#111111] overflow-hidden flex">
+        <motion.div 
+          className="flex w-max hover:[animation-play-state:paused]"
+          animate={{ x: ["0%", "-50%"] }}
+          transition={{ ease: "linear", duration: 40, repeat: Infinity }}
+        >
+          {[...images, ...images, ...images, ...images, ...images, ...images].map((img, idx) => (
+            <div key={idx} className="flex-none w-[85vw] md:w-[60vw] lg:w-[40vw] h-[400px] overflow-hidden rounded-sm relative group cursor-pointer mr-6">
               <img src={img} alt={`Gallery image ${idx}`} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
               <div className="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors duration-500"></div>
             </div>
           ))}
-        </div>
+        </motion.div>
       </section>
 
       {/* ABOUT SECTION */}
