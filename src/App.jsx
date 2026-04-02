@@ -317,7 +317,7 @@ export default function App() {
                   <span>Open Daily: 7:30 AM onwards</span>
                 </li>
               </ul>
-              <a href="https://maps.app.goo.gl/gD98PZQc3qZ3A8Gv7" target="_blank" rel="noopener noreferrer" className="mt-6 inline-flex border border-[#111111] px-6 py-2.5 uppercase tracking-widest text-xs font-semibold hover:bg-[#111111] hover:text-white transition-colors w-full justify-center">
+              <a href="https://maps.app.goo.gl/BFiZSm9NYnuNpaZJ8" target="_blank" rel="noopener noreferrer" className="mt-6 inline-flex border border-[#111111] px-6 py-2.5 uppercase tracking-widest text-xs font-semibold hover:bg-[#111111] hover:text-white transition-colors w-full justify-center">
                 Get Directions
               </a>
             </div>
